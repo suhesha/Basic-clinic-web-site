@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>contactus</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: 'Qahiri', sans-serif;
+    }
+
+    body {
+        background-color: aliceblue;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        height: 65 px;
+        background-color: #2196F3;
+        border-radius: 20px;
+        color: white;
+    }
+
+    img {
+
+        width: 40px;
+        border-radius: 20px;
+        margin: -12px -3px;
+        padding: 3px 3px;
+    }
+
+    nav ul {
+        margin: 9px 7px;
+        padding: 20px 24px;
+
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        height: 40px;
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+        margin: 0px 0px;
+        padding: 0px 0px;
+        color: white;
+    }
+
+    nav ul li {
+        margin: 0px 15px;
+        padding: 0px 6px;
+    }
+
+    .head {
+        background-color: #2196F3;
+        color: white;
+        text-align: center;
+        border-radius: 50px;
+        margin: auto;
+        padding: 0px 10px;
+        width: 150px;
+    }
+
+
+    .text {
+        font-size: 15px;
+    }
+
+    form {
+        margin: 40px auto;
+        padding: 60px 20px;
+        border: 2px solid black;
+        border-radius: 12px;
+        width: 900px;
+        text-align: center;
+
+    }
+
+    label {
+        font-size: 17px;
+        color: #6c757d;
+    }
+
+    input {
+        border-radius: 12px;
+    }
+
+    #remarks {
+        width: 600px;
+        border-radius: 12px;
+        align-items: center;
+        color: #6c757d;
+    }
+
+    button {
+        border-radius: 12px;
+        background-color: #2196F3;
+        color: white;
+        font-size: 18   px;
+    }
+
+    #top {
+        margin: 0px 20px;
+        padding: 0px 0px;
+    }
+
+    #mid {
+        margin: 0px 30px;
+        padding: 0px 0px;
+
+    }
+</style>
+
+<body>
+    <nav>
+        <ul>
+
+            <li class="brand"><a href="homePage.html">
+
+                    <img src="logo.jpg" alt="Aastha Clinic"> Aastha Clinic</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="para">
+        <hr>
+        <header class="head">
+            <h2>
+                contact us
+            </h2>
+
+        </header>
+        <p class="text" id="paragraph">
+
+
+
+            We would love to hear from you! Let us know of your experience with Aastha Clinic, and keep in touch.
+            Please fill in the required details and our team will get in touch with you.
+
+        </p>
+        <hr>
+    </div>
+    <div class="contact" id="contactus">
+        <form>
+            <label for="enquiry" id="top">select enquiry</label>
+
+            <select name="enquiry" id="enquiry">
+                <option value="-select-">-select-</option>
+                <option value="Dr appointment">Dr appointment</option>
+                <option value="lab reports">lab reports</option>
+                <option value="health package">health package</option>
+                <option value="Healthcare at home">Healthcare at home</option>
+            </select>
+
+            <label id="top"> Name</label>
+            <input type="text" placeholder="enter email" name="user name" required>
+            <label id="top"> Email </label>
+            <input type="text" placeholder="enter email" name="email" required><br>
+
+            <label id="mid">Mobile No.</label>
+            <input type="tel" maxlength="10" pattern="\d{10}" placeholder=" Enter 10 digits mobile no." />
+            <label for="time" id="mid">Preferred time to call</label>
+            <select name="time" id="time">
+                <option value="-select-">-select-</option>
+                <option value="9AM to 10AM">9AM to 10AM</option>
+                <option value="10AM to 12Pm">10AM to 12Pm</option>
+                <option value="2Pm to 3Pm">2Pm to 3Pm</option>
+                <option value="4Pm to 6Pm">4Pm to 6Pm</option>
+
+            </select><br>
+            <labeliid>Remark</label><br>
+                <textarea id="remarks" name="remarks" placeholder="Please enter remark here" rows="5"></textarea><br>
+                <button type="submit">Submit</button>
+
+    </div>
+
+</body>
+
+</html>

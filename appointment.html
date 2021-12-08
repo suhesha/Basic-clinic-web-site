@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: 'Qahiri', sans-serif;
+    }
+
+    body {
+        background-color: aliceblue;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        height: 65 px;
+        background-color: #2196F3;
+        border-radius: 20px;
+        color: white;
+    }
+
+    img {
+
+        width: 40px;
+        border-radius: 20px;
+        margin: -12px -3px;
+        padding: 3px 3px;
+    }
+
+    nav ul {
+        margin: 9px 7px;
+        padding: 20px 24px;
+
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        height: 40px;
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+        margin: 0px 0px;
+        padding: 0px 0px;
+        color: white;
+    }
+
+    nav ul li {
+        margin: 0px 15px;
+        padding: 0px 6px;
+
+    }
+
+    /* header ends here  */
+
+    h2 {
+        background-color: #2196F3;
+        color: white;
+        text-align: center;
+        width: 250px;
+        margin: 20px auto;
+        padding: 5px 12px;
+        border-radius: 30px;
+    }
+
+    .main {
+        border: 2px solid grey;
+        width: 750px;
+        margin: 40px auto;
+        padding: 0px 0px;
+        background-color: #e9ebee;
+    }
+
+    h3 {
+        margin: 0px 0px;
+        padding: 0px 0px;
+
+    }
+
+    .top {
+        margin: 10px 10px;
+        padding: 20px 15px;
+    }
+
+    .formb {
+        margin: 20px 40px;
+        padding: 5px 30px;
+    }
+
+    .up .mid .mid2 {
+        margin: 10px 0px;
+        padding: 0px 0px;
+    }
+
+    .btt {
+        margin: 10px auto;
+        padding: 0px 6px;
+        background-color: #2196F3;
+        color: white;
+        border-radius: 12px;
+        font-size: 15px;
+
+    }
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><a href="homePage.html">
+
+                    <img src="logo.jpg" alt="Aastha Clinic"> Aastha Clinic</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="head">
+        <h2>Appointment form </h2>
+    </div>
+
+    <div class="main">
+        <header class="top">
+            <h3>Patients Personal Details</h3>
+
+            <p>fill the form below and we will get soon to you for more updates</p>
+            <hr>
+        </header>
+
+        <div class="formb">
+            <form>
+                <div class="up">
+
+                    <label for="First Name">First Name</label>
+                    <input type="text" placeholder="enter first name" name="user name" required>
+                    <label for="Last Name">Last Name</label>
+                    <input type="text" placeholder="enter last name" name="user name" required><br><br>
+                </div>
+                <div class="mid">
+
+                    <label for="Gender">Gender</label>
+                    <select name="Gender" id="Gender">
+                        <option value="-select-">-select-</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="other">other</option>
+                    </select>
+                    <label for="Date of birth">Date of birth</label>
+                    <input type="date" placeholder="Date of birth" name="dd-mm-yy" required><br><br>
+                </div>
+                <div class="mid2">
+
+                    <label for=" mobile no.">Mobile no.</label>
+                    <input type="tel" maxlength="10" pattern="\d{10}" placeholder=" Enter 10 digits mobile no." />
+                    <label for=" email">Email </label>
+                    <input type="text" placeholder="enter your email" name=" email" required><br><br>
+                </div>
+                <div class="bottom">
+
+                    <label for="appointment date">appointment date</label>
+                    <input type="date" placeholder="appointment date" name="dd-mm-yy" required>
+                    <label for="time" id="mid">Appointment time</label>
+                    <select name="time" id="time">
+                        <option value="-select-">-select-</option>
+                        <option value="9AM to 10AM">9AM to 10AM</option>
+                        <option value="10AM to 12Pm">10AM to 11Pm</option>
+                        <option value="10AM to 12Pm">11AM to 12Pm</option>
+                        <option value="4Pm to 6Pm">1Pm to 2Pm</option>
+                        <option value="2Pm to 3Pm">2Pm to 3Pm</option>
+
+
+                    </select><br>
+                </div>
+
+                <center>
+                    <button class="btt">
+                        submit form
+                    </button>
+                </center>
+
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
